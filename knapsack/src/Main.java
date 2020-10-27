@@ -15,7 +15,12 @@ public class Main {
 			
 			Knapsack ks = getInput(args);
 			
-			Solver solver = new Greedy(ks);
+			Solver solver;
+			
+			if (ks.K() * ks.N() < 1000000000)
+				solver = new DynamicProgramming(ks);
+			else
+				solver = new Greedy(ks);
 			
 			output(solver);
 			

@@ -10,7 +10,14 @@ public abstract class Solver {
 	/**
 	 * The knapsack the solver computes on
 	 */
-	protected final Knapsack ks;
+	public final Knapsack ks;
+	
+	/*
+	 * The objectiveValue computed in the constructor
+	 */
+	protected long objectiveValue;
+	
+	protected final boolean[] taken;
 	
 	/**
 	 * Constructs generic solver with knapsack
@@ -18,13 +25,18 @@ public abstract class Solver {
 	 */
 	public Solver(Knapsack ks) {
 		this.ks = ks;
+		
+		objectiveValue = 0;
+		taken = new boolean[ks.N()];
 	}
 	
 	/**
 	 * Get the objective value computed by the solver
 	 * @return the objective value
 	 */
-	public abstract long objectiveValue();
+	public long objectiveValue() {
+		return objectiveValue;
+	}
 	
 	/**
 	 * Did the solver guarantee optimality of the solution?
@@ -37,6 +49,8 @@ public abstract class Solver {
 	 * @param i
 	 * @return true if taken, false otherwise
 	 */
-	public abstract boolean isTaken(int i);
+	public boolean isTaken(int i) {
+		return taken[i];
+	}
 	
 }
