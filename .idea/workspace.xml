@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/knapsack/src/BranchAndBound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/knapsack/src/DepthFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/BruteForce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/DynamicProgramming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/Greedy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/Knapsack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/bin/Solver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/BruteForce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/DynamicProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/DynamicProgramming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/Greedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/Greedy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/Knapsack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/Solver.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="b75b85d9-086a-4813-a1b3-16841a2fd205" />
+  <component name="ProjectId" id="1jktGuvwDLqyk4iGcR031M0y5wn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Discrete Optimization" />
+      <option name="PROGRAM_PARAMETERS" value="-file=..\data\ks_4_0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="" />
+      <created>1604359827045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604359827045</updated>
+      <workItem from="1604359828404" duration="1231000" />
+      <workItem from="1604361800447" duration="2326000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="230" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604362192870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="230" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604362192870" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604359848066">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604359848066" />
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1604362197304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604362197304" />
+    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1604362197304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604362197304" />
+    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1604362197304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604362197304" />
+    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1604362197304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604362197304" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1604361999170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604361999170" />
+    <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604360130929">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1604360130929" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
