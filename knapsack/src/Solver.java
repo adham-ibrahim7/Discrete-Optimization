@@ -11,14 +11,13 @@ public abstract class Solver {
      */
     public final Knapsack ks;
     protected final boolean[] taken;
-    /*
+    /**
      * The objectiveValue computed in the constructor
      */
     protected long objectiveValue;
 
     /**
      * Constructs generic solver with knapsack
-     *
      * @param ks
      */
     public Solver(Knapsack ks) {

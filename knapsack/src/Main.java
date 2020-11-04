@@ -23,7 +23,7 @@ public class Main {
             else
                 solver = new Greedy(ks);*/
 
-            solver = new DepthFirst(ks);
+            solver = new BestFirst(ks);
 
             output(solver);
 

@@ -23,9 +23,12 @@ public class Knapsack {
 
         greedyRelaxation = 0;
         partialRelaxation = 0;
+        int tempCapacity = K;
         for (int i = 0; i < N(); i++) {
             greedyRelaxation += values[i];
-            partialRelaxation += valueDensity(i);
+            partialRelaxation += (double) value(i) * Math.min(tempCapacity, weight(i)) / weight(i);
+            tempCapacity -= weight(i);
+            if (tempCapacity < 0) tempCapacity = 0;
         }
     }
 
@@ -49,12 +52,8 @@ public class Knapsack {
         return greedyRelaxation;
     }
 
-    public double valueDensity(int i) {
-        return (double) values[i] / weights[i];
-    }
-
-    public double partialValueRelaxation() {
-        return partialRelaxation;
+    public int partialValueRelaxation() {
+        return (int) partialRelaxation;
     }
 
 }
