@@ -4,7 +4,6 @@
 
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Stack;
 
 public class BestFirst extends BranchAndBound {
 
@@ -14,10 +13,8 @@ public class BestFirst extends BranchAndBound {
 
     @Override
     protected void search() {
-        Node bestSoFar = null;
-
         Queue<Node> queue = new PriorityQueue<>();
-        queue.add(new Node(0, ks.K(), ks.greedyRelaxation(), 0, null));
+        queue.add(new Node(0, ks.K(), (int) (1.8 * ks.partialValueRelaxation()), 0, null));
 
         while (!queue.isEmpty()) {
             if (System.currentTimeMillis() - startTime > MAX_RUNNING_TIME_MILLIS) break;

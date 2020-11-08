@@ -5,35 +5,60 @@
  * Created by Adham Ibrahim on Oct 25, 2020
  */
 
+import java.util.Arrays;
+
 public class Knapsack {
-    private final int[] values;
-    private final int[] weights;
+    private final int[] value;
+    private final int[] weight;
     private final int K;
 
-    private int greedyRelaxation;
-    private double partialRelaxation;
+    private final int greedyRelaxation;
+    private final double partialRelaxation;
 
-    public Knapsack(final int[] values, final int[] weights, final int K) {
-        if (values.length != weights.length)
+    public Knapsack(final int[] value, final int[] weight, final int K) {
+        if (value.length != weight.length)
             throw new IllegalArgumentException("Values and weights do not have same size");
 
-        this.values = values;
-        this.weights = weights;
+        this.value = value;
+        this.weight = weight;
         this.K = K;
 
-        greedyRelaxation = 0;
-        partialRelaxation = 0;
-        int tempCapacity = K;
+        this.greedyRelaxation = computeGreedyRelaxation();
+        this.partialRelaxation = computePartialRelaxation();
+    }
+
+    private int computeGreedyRelaxation() {
+        int greedyRelaxation = 0;
         for (int i = 0; i < N(); i++) {
-            greedyRelaxation += values[i];
-            partialRelaxation += (double) value(i) * Math.min(tempCapacity, weight(i)) / weight(i);
-            tempCapacity -= weight(i);
-            if (tempCapacity < 0) tempCapacity = 0;
+            greedyRelaxation += value[i];
         }
+        return greedyRelaxation;
+    }
+
+    private double computePartialRelaxation() {
+        Item[] items = new Item[N()];
+        for (int i = 0; i < N(); i++) {
+            items[i] = new Item(value[i], weight[i]);
+        }
+
+        Arrays.sort(items);
+
+        double partialRelaxation = 0;
+        int tempCapacity = K();
+        for (Item item : items) {
+            if (item.weight <= tempCapacity) {
+                partialRelaxation += item.value;
+                tempCapacity -= item.weight;
+            } else {
+                partialRelaxation += (double) tempCapacity / item.weight * item.value;
+            }
+        }
+
+        return partialRelaxation;
     }
 
     public int N() {
-        return this.values.length;
+        return this.value.length;
     }
 
     public int K() {
@@ -41,19 +66,32 @@ public class Knapsack {
     }
 
     public int value(int i) {
-        return this.values[i];
+        return this.value[i];
     }
 
     public int weight(int i) {
-        return this.weights[i];
+        return this.weight[i];
     }
 
     public int greedyRelaxation() {
         return greedyRelaxation;
     }
 
-    public int partialValueRelaxation() {
-        return (int) partialRelaxation;
+    public double partialValueRelaxation() {
+        return partialRelaxation;
+    }
+
+    private class Item implements Comparable<Item> {
+        int value, weight;
+        Item(int value, int weight) {
+            this.value = value;
+            this.weight = weight;
+        }
+
+        @Override
+        public int compareTo(Item o) {
+            return -Double.compare((double) this.value / this.weight, (double) o.value / o.weight);
+        }
     }
 
 }

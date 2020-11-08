@@ -12,7 +12,6 @@ public class DepthFirst extends BranchAndBound {
 
     @Override
     protected void search() {
-        Node bestSoFar = null;
 
         Stack<Node> stack = new Stack<>();
         stack.add(new Node(0, ks.K(), ks.greedyRelaxation(), 0, null));
