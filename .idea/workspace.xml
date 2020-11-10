@@ -19,32 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="refactor: create branch and bound abstraction, add depth first solution">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knapsack/src/knapsack/better/FastBranchAndBound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knapsack/src/knapsack/better/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/MainOld.java" afterDir="false" />
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="refactor: attempt better branch and bound to no avail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/_coursera" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/_coursera" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/BranchAndBound$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/BranchAndBound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/BruteForce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/DynamicProgramming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/Greedy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/Knapsack$Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/Knapsack.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/knapsack/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/bin/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/Solver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/BestFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/BestFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/BranchAndBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/BranchAndBound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/BruteForce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/DepthFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/DepthFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/DynamicProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/DynamicProgramming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/Greedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/Greedy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/old/Knapsack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/knapsack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/knapsack/better/FastBranchAndBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/better/FastBranchAndBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack/src/knapsack/better/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/src/knapsack/better/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,22 +75,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.solver">
+  <component name="RunManager" selected="Python.submit">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Discrete Optimization" />
       <option name="PROGRAM_PARAMETERS" value="-file=C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\knapsack\data\ks_4_0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,7 +98,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knapsack/solver.py" />
-      <option name="PARAMETERS" value="data\ks_100_1" />
+      <option name="PARAMETERS" value="data\ks_10000_0" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -168,9 +137,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.submit" />
         <item itemvalue="Python.solver" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Python.submit" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +161,7 @@
       <workItem from="1604448131969" duration="2447000" />
       <workItem from="1604452024426" duration="3608000" />
       <workItem from="1604622420899" duration="7844000" />
+      <workItem from="1604970095456" duration="6072000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -200,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604364206448</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor: attempt better branch and bound to no avail">
+      <created>1604969056587</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604969056588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: create branch and bound abstraction, add depth first solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: create branch and bound abstraction, add depth first solution" />
+    <MESSAGE value="refactor: attempt better branch and bound to no avail" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: attempt better branch and bound to no avail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1604452637252">
@@ -231,10 +209,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604426071269" />
-    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604966431495">
+    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604976341776">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604966431495" />
+    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604976341776" />
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604968222118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -251,10 +229,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="319" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1604967927137" />
-    <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604967822173">
+    <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604976229908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1604967822173" />
+    <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1604976229908" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604966190060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,26 +245,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604632153868" />
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1604968425370">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1604976639263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604968425370" />
-    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1604968425370">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604976639263" />
+    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1604976639263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604968425370" />
-    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1604968425370">
+    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604976639263" />
+    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1604976639263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604968425370" />
-    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1604968425370">
+    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604976639263" />
+    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1604976639263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604968425370" />
+    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604976639263" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1604448676471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604448676471" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604969192851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604969192851" />
     <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604360130929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -315,7 +297,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604455478877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1604968419180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604976357337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1604976350305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
   </component>
 </project>

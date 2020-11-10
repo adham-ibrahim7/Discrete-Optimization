@@ -12,16 +12,19 @@ import java.util.Set;
 
 public class FastBranchAndBound extends Solver {
 
+    //TODO obsolete now with fast method
+    private static final long MAX_RUNNING_TIME_MILLIS = 100_000;
+
     private Item[] orig;
     private Item[] items;
-    private int capacity;
+    private long capacity;
 
     private int bestValue;
     private Set<Item> bestSet;
 
     private final long startTime;
 
-    public FastBranchAndBound(int[] values, int[] weights, int capacity) {
+    public FastBranchAndBound(int[] values, int[] weights, long capacity) {
         super();
 
         startTime = System.currentTimeMillis();
@@ -30,8 +33,8 @@ public class FastBranchAndBound extends Solver {
         items = new Item[values.length];
 
         for (int i = 0; i < values.length; i++) {
-            orig[i] = new Item(values[i], weights[i]);
-            items[i] = new Item(values[i], weights[i]);
+            orig[i] = new Item(values[i], weights[i], i);
+            items[i] = new Item(values[i], weights[i], i);
         }
 
         Arrays.sort(items);
@@ -43,27 +46,27 @@ public class FastBranchAndBound extends Solver {
         solve(0, 0, capacity, new HashSet<>());
     }
 
-    private int solve(int i, int currentValue, int capacity, Set<Item> takenItems) {
-        if (System.currentTimeMillis() - startTime >= 100_000) return -1;
-
-        //System.err.println(i + " " + currentValue + " " + capacity);
+    private int solve(int i, int currentValue, long capacity, Set<Item> takenItems) {
+        if (elapsedTime() >= MAX_RUNNING_TIME_MILLIS) return -1;
 
         if (currentValue > bestValue) {
             bestValue = currentValue;
             bestSet = takenItems;
         }
 
-        if (i == items.length) {
+        //TODO why cant it deal with more than 5000?
+        if (i >= Math.min(5000, items.length)) {
             return currentValue;
         }
 
-        int upperBound = currentValue + linearRelaxation(i, capacity);
+        double upperBound = currentValue + linearRelaxation(i, capacity);
 
         if (upperBound <= bestValue) {
             return -1;
         }
 
         int with = -1;
+
         if (capacity >= items[i].getWeight()) {
             Set<Item> newTakenItems = new HashSet<>(takenItems);
             newTakenItems.add(items[i]);
@@ -75,19 +78,20 @@ public class FastBranchAndBound extends Solver {
         return Math.max(with, without);
     }
 
-    private int linearRelaxation(int start, int capacity) {
+    private double linearRelaxation(int start, long capacity) {
         double estimate = 0;
 
         for (int i = start; i < items.length; i++) {
             if (items[i].getWeight() <= capacity) {
                 estimate += items[i].getValue();
+                capacity -= items[i].getWeight();
             } else {
                 estimate += (double) capacity / items[i].getWeight() * items[i].getValue();
                 break;
             }
         }
 
-        return (int) estimate;
+        return estimate;
     }
 
     @Override
@@ -102,6 +106,11 @@ public class FastBranchAndBound extends Solver {
 
     @Override
     public boolean isGuaranteedOptimal() {
-        return false;
+        return elapsedTime() < MAX_RUNNING_TIME_MILLIS + 500;
     }
+
+    private long elapsedTime() {
+        return System.currentTimeMillis() - startTime;
+    }
+
 }

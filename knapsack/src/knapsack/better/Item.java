@@ -9,14 +9,17 @@ public class Item implements Comparable<Item> {
     private int value;
     private int weight;
 
-    public Item(int value, int weight) {
+    private int index;
+
+    public Item(int value, int weight, int i) {
         this.value = value;
         this.weight = weight;
+        this.index = i;
     }
 
     @Override
     public int hashCode() {
-        return 31 * value + weight;
+        return index;
     }
 
     @Override
@@ -27,7 +30,7 @@ public class Item implements Comparable<Item> {
 
         Item i = (Item) o;
 
-        return this.value == i.value && this.weight == i.weight;
+        return this.index == i.index;
     }
 
     @Override

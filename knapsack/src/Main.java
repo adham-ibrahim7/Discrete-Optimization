@@ -28,7 +28,6 @@ public class Main {
             //new DynamicProgramming(new Knapsack(values, weights, capacity));
 
             output(solver);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -83,9 +82,11 @@ public class Main {
     private static void output(Solver solver) {
         // prepare the solution in the specified output format
         System.out.println(solver.objectiveValue() + " " + (solver.isGuaranteedOptimal() ? 1 : 0));
+
         for (int i = 0; i < values.length; i++) {
             System.out.print((solver.isTaken(i) ? 1 : 0) + " ");
         }
+
         System.out.println();
     }
 
