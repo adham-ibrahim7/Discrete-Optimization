@@ -46,8 +46,10 @@ public class FastBranchAndBound extends Solver {
         solve(0, 0, capacity, new HashSet<>());
     }
 
-    private int solve(int i, int currentValue, long capacity, Set<Item> takenItems) {
-        if (elapsedTime() >= MAX_RUNNING_TIME_MILLIS) return -1;
+    private void solve(int i, int currentValue, long capacity, Set<Item> takenItems) {
+        if (elapsedTime() >= MAX_RUNNING_TIME_MILLIS) {
+            return;
+        }
 
         if (currentValue > bestValue) {
             bestValue = currentValue;
@@ -56,26 +58,24 @@ public class FastBranchAndBound extends Solver {
 
         //TODO why cant it deal with more than 5000?
         if (i >= Math.min(5000, items.length)) {
-            return currentValue;
+            return;
         }
 
         double upperBound = currentValue + linearRelaxation(i, capacity);
 
         if (upperBound <= bestValue) {
-            return -1;
+            return;
         }
 
-        int with = -1;
-
+        //with
         if (capacity >= items[i].getWeight()) {
             Set<Item> newTakenItems = new HashSet<>(takenItems);
             newTakenItems.add(items[i]);
-            with = solve(i+1, currentValue + items[i].getValue(), capacity - items[i].getWeight(), newTakenItems);
+            solve(i+1, currentValue + items[i].getValue(), capacity - items[i].getWeight(), newTakenItems);
         }
 
-        int without = solve(i+1, currentValue, capacity, takenItems);
-
-        return Math.max(with, without);
+        //without
+        solve(i+1, currentValue, capacity, takenItems);
     }
 
     private double linearRelaxation(int start, long capacity) {
