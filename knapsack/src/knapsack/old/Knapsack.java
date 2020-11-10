@@ -1,6 +1,6 @@
-
+package knapsack.old;
 /*
- * Immutable Knapsack type, storing items and its own capacity
+ * Immutable knapsack.old.Knapsack type, storing items and its own capacity
  *
  * Created by Adham Ibrahim on Oct 25, 2020
  */

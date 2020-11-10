@@ -1,9 +1,11 @@
-
+package knapsack.old;
 /*
  * Trivial greedy solution, fills as many items in order as possible
  *
  * Created by Adham Ibrahim on Oct 25, 2020
  */
+
+import knapsack.Solver;
 
 public class Greedy extends Solver {
 

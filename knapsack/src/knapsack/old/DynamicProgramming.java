@@ -1,14 +1,16 @@
-
+package knapsack.old;
 /*
  * Created by Adham Ibrahim on Oct 25, 2020
  */
+
+import knapsack.Solver;
 
 public class DynamicProgramming extends Solver {
 
     public DynamicProgramming(Knapsack ks) {
         super(ks);
 
-        long[][] dp = new long[ks.N() + 1][ks.K() + 1];
+        int[][] dp = new int[ks.N() + 1][ks.K() + 1];
 
         for (int i = 1; i <= ks.N(); i++) {
             for (int k = 0; k <= ks.K(); k++) {

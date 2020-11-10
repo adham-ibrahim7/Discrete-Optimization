@@ -1,8 +1,10 @@
+package knapsack;
+
 /*
- * Abstract type with methods for
- *
  * Created by Adham Ibrahim on Oct 25, 2020
  */
+
+import knapsack.old.Knapsack;
 
 public abstract class Solver {
 
@@ -14,7 +16,7 @@ public abstract class Solver {
     /**
      * The objectiveValue computed in the constructor
      */
-    protected long objectiveValue;
+    protected int objectiveValue;
 
     /**
      * Constructs generic solver with knapsack
@@ -27,12 +29,17 @@ public abstract class Solver {
         taken = new boolean[ks.N()];
     }
 
+    public Solver() {
+        ks = null;
+        taken = null;
+    }
+
     /**
      * Get the objective value computed by the solver
      *
      * @return the objective value
      */
-    public long objectiveValue() {
+    public int objectiveValue() {
         return objectiveValue;
     }
 

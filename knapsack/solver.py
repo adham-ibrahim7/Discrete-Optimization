@@ -13,7 +13,7 @@ def solve_it(input_data):
     tmp_file.write(input_data)
     tmp_file.close()
 
-    # Runs the command: java Solver -file=tmp.data
+    # Runs the command: java knapsack.Solver -file=tmp.data
 
     process = Popen(['java', '-cp', 'bin', 'Main', '-file=' + tmp_file_name], stdout=PIPE, universal_newlines=True)
     (stdout, stderr) = process.communicate()

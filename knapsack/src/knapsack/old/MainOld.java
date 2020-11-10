@@ -1,7 +1,6 @@
+package knapsack.old;
+
 import knapsack.Solver;
-import knapsack.better.FastBranchAndBound;
-import knapsack.old.DynamicProgramming;
-import knapsack.old.Knapsack;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,23 +8,28 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 /**
  * The class <code>knapsack.Solver</code> is an implementation of a greedy algorithm to
  * solve the knapsack problem.
  */
-public class Main {
-
-    private static int[] values, weights;
-    private static int capacity;
+public class MainOld {
 
     public static void main(String[] args) {
         try {
             //input, solve, output
 
-            getInput(args);
+            Knapsack ks = getInput(args);
 
-            Solver solver = new FastBranchAndBound(values, weights, capacity);
-            //new DynamicProgramming(new Knapsack(values, weights, capacity));
+            Solver solver;
+
+            /*if (ks.K() * ks.N() < 1000000000)
+                solver = new DynamicProgramming(ks);
+            else
+                solver = new Greedy(ks);*/
+
+            solver = new BestFirst(ks);
 
             output(solver);
 
@@ -37,7 +41,7 @@ public class Main {
     /**
      * Read the instance, solve it, and print the solution in the standard output
      */
-    private static void getInput(String[] args) throws IOException {
+    private static Knapsack getInput(String[] args) throws IOException {
         String fileName = null;
 
         // get the temp file name
@@ -65,11 +69,10 @@ public class Main {
         // parse the data in the file
         String[] firstLine = lines.get(0).split("\\s+");
         int items = Integer.parseInt(firstLine[0]);
+        int capacity = Integer.parseInt(firstLine[1]);
 
-        capacity = Integer.parseInt(firstLine[1]);
-
-        values = new int[items];
-        weights = new int[items];
+        int[] values = new int[items];
+        int[] weights = new int[items];
 
         for (int i = 1; i < items + 1; i++) {
             String line = lines.get(i);
@@ -78,12 +81,14 @@ public class Main {
             values[i - 1] = Integer.parseInt(parts[0]);
             weights[i - 1] = Integer.parseInt(parts[1]);
         }
+
+        return new Knapsack(values, weights, capacity);
     }
 
     private static void output(Solver solver) {
         // prepare the solution in the specified output format
         System.out.println(solver.objectiveValue() + " " + (solver.isGuaranteedOptimal() ? 1 : 0));
-        for (int i = 0; i < values.length; i++) {
+        for (int i = 0; i < solver.ks.N(); i++) {
             System.out.print((solver.isTaken(i) ? 1 : 0) + " ");
         }
         System.out.println();

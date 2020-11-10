@@ -1,7 +1,9 @@
-
+package knapsack.old;
 /*
  * Created by Adham Ibrahim on Oct 27, 2020
  */
+
+import knapsack.Solver;
 
 import java.util.Collection;
 
