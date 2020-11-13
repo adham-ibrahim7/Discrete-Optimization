@@ -20,47 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="refactor: optimized knapsack!">
-      <change afterPath="$PROJECT_DIR$/sudoku/sudoku.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudoku/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudoku/ex1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/BestFirst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/DepthFirst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/Solver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/better/FastBranchAndBound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/better/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/BestFirst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/BranchAndBound$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/BranchAndBound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/BruteForce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/DepthFirst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/DynamicProgramming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/Greedy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/Knapsack$Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/Knapsack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/knapsack/old/MainOld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_10000_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_1000_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_100_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_100_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_100_2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_106_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_19_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_200_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_200_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_300_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_30_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_400_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_40_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_45_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_4_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_500_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_50_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_50_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_60_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_82_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_lecture_dp_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/bin/ks_lecture_dp_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/sudoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +120,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="solver2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Discrete Optimization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku/solver2.py" />
+      <option name="PARAMETERS" value="ex1.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="submit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,10 +191,12 @@
       <item itemvalue="Python.solver" />
       <item itemvalue="Python.submit" />
       <item itemvalue="Python.sudoku" />
+      <item itemvalue="Python.solver2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.sudoku" />
+        <item itemvalue="Python.solver2" />
         <item itemvalue="Python.solver" />
         <item itemvalue="Python.submit" />
         <item itemvalue="Application.Main" />
@@ -238,6 +226,14 @@
       <workItem from="1605050054894" duration="2083000" />
       <workItem from="1605061839616" duration="602000" />
       <workItem from="1605096343310" duration="3009000" />
+      <workItem from="1605135779644" duration="38000" />
+      <workItem from="1605135829343" duration="604000" />
+      <workItem from="1605143558073" duration="244000" />
+      <workItem from="1605149149062" duration="2977000" />
+      <workItem from="1605152548680" duration="990000" />
+      <workItem from="1605188737285" duration="117000" />
+      <workItem from="1605194644523" duration="585000" />
+      <workItem from="1605218043583" duration="8744000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -293,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604426071269" />
-    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604976341776">
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605220598463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="308" y="94" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604976341776" />
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605220598463" />
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604968222118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -329,26 +325,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604632153868" />
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom" timestamp="1605099381993">
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1605232035166">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605099381993" />
-    <state width="1493" height="324" key="GridCell.Tab.0.center" timestamp="1605099381993">
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605232035166" />
+    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1605232035165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605099381993" />
-    <state width="1493" height="324" key="GridCell.Tab.0.left" timestamp="1605099381993">
+    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605232035165" />
+    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1605232035164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605099381993" />
-    <state width="1493" height="324" key="GridCell.Tab.0.right" timestamp="1605099381993">
+    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605232035164" />
+    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1605232035165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605099381993" />
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605098749820">
+    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605232035165" />
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605231534509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605098749820" />
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605231534509" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604976724753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,6 +353,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1604360130929" />
+    <state x="772" y="137" width="579" height="592" key="find.popup" timestamp="1605231318138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="772" y="137" width="579" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605231318138" />
     <state x="209" y="33" key="new project wizard" timestamp="1605096370763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -385,7 +385,8 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605097395120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605232025086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604976357337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1605010394139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
   </component>
