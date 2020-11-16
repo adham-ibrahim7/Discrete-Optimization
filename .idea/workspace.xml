@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add sudoku starter">
-      <change afterPath="$PROJECT_DIR$/sudoku/sudokuForrestKnight.py" afterDir="false" />
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="faster sudoku">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/ex1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/board1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/board1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/board1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/sudoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +78,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.sudoku">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sudoku" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,7 +188,7 @@
       <workItem from="1605413579594" duration="2092000" />
       <workItem from="1605479851975" duration="3455000" />
       <workItem from="1605484874550" duration="16000" />
-      <workItem from="1605488528548" duration="351000" />
+      <workItem from="1605488528548" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -209,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605232091401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="faster sudoku">
+      <created>1605489157790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605489157790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +248,8 @@
     <MESSAGE value="refactor: attempt better branch and bound to no avail" />
     <MESSAGE value="refactor: optimized knapsack!" />
     <MESSAGE value="add sudoku starter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sudoku starter" />
+    <MESSAGE value="faster sudoku" />
+    <option name="LAST_COMMIT_MESSAGE" value="faster sudoku" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1605311278147">
@@ -279,34 +296,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604632153868" />
-    <state width="1493" height="409" key="GridCell.Tab.0.bottom" timestamp="1605488601176">
+    <state width="1493" height="420" key="GridCell.Tab.0.bottom" timestamp="1605493439968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="409" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
-    <state width="1493" height="409" key="GridCell.Tab.0.center" timestamp="1605488601176">
+    <state width="1493" height="420" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605493439968" />
+    <state width="1493" height="420" key="GridCell.Tab.0.center" timestamp="1605493439968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="409" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
-    <state width="1493" height="409" key="GridCell.Tab.0.left" timestamp="1605488601176">
+    <state width="1493" height="420" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605493439968" />
+    <state width="1493" height="420" key="GridCell.Tab.0.left" timestamp="1605493439967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="409" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
-    <state width="1493" height="409" key="GridCell.Tab.0.right" timestamp="1605488601176">
+    <state width="1493" height="420" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605493439967" />
+    <state width="1493" height="420" key="GridCell.Tab.0.right" timestamp="1605493439968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="409" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
+    <state width="1493" height="420" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605493439968" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605493402275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605493402275" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605493402275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605493402275" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605493402275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605493402275" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605493402275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605493402275" />
     <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605484388566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605484388566" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605232104153">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605489173092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605232104153" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605232217886">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605489173092" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605491037823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605232217886" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605491037823" />
     <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604360130929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,7 +376,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605488561562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605493439959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604976357337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
