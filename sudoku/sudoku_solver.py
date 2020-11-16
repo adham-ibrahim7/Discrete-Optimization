@@ -1,4 +1,6 @@
 from copy import deepcopy
+from random import shuffle
+import sys
 
 
 def filled(board, i, j):
@@ -9,14 +11,10 @@ def standard_constraints(board, r, c):
     for i in range(9):
         if not filled(board, i, c) and board[r][c] in board[i][c]:
             board[i][c].remove(board[r][c])
-            #if len(board[i][c]) == 0:
-            #    return None
 
     for j in range(9):
         if not filled(board, r, j) and board[r][c] in board[r][j]:
             board[r][j].remove(board[r][c])
-            #if len(board[r][j]) == 0:
-            #    return None
 
     i0 = r // 3 * 3
     j0 = c // 3 * 3
@@ -25,8 +23,6 @@ def standard_constraints(board, r, c):
         for j in range(j0, j0 + 3):
             if not filled(board, i, j) and board[r][c] in board[i][j]:
                 board[i][j].remove(board[r][c])
-                #if len(board[i][j]) == 0:
-                #    return None
 
     return board
 
@@ -50,22 +46,30 @@ def check_valid(board, r, c):
     return valid
 
 
-def search(board, empty_positions, calls):
+calls: int = 0
+
+
+def search(board, empty_positions, shuffle_board=False):
+    global calls
+    calls += 1
+
     if len(empty_positions) == 0:
         print("SUCCESS! " + str(calls) + " calls made to search()")
         print_board(board)
         if check_board(board):
-            print("ensured constraints are met")
+            print("constraints met")
         return True
 
     i, j = empty_positions[0]
 
-    for n in board[i][j]:
-        temp = board[i][j].copy()
+    if shuffle_board:
+        shuffle(board[i][j])
+    valid = board[i][j]
+    for n in valid:
         board[i][j] = n
-        if search(standard_constraints(deepcopy(board), i, j), empty_positions[1:], calls + 1):
+        if search(standard_constraints(deepcopy(board), i, j), empty_positions[1:], shuffle_board):
             return True
-        board[i][j] = temp
+        board[i][j] = valid
     return False
 
 
@@ -79,7 +83,7 @@ def solve(board):
             else:
                 empty_positions.append((i, j))
 
-    search(board, empty_positions, 0)
+    search(board, empty_positions)
 
 
 def check_board(board):
@@ -94,13 +98,14 @@ def check_board(board):
     for i in range(0, 9, 3):
         for j in range(0, 9, 3):
             box = set()
-            for k in range(i, i+3):
-                for h in range(j, j+3):
+            for k in range(i, i + 3):
+                for h in range(j, j + 3):
                     box.add(board[k][h])
             if len(box) < 9:
                 return False
 
     return True
+
 
 def print_board(board):
     if board is None:
@@ -116,7 +121,7 @@ def print_board(board):
                 print(" | ", end="")
 
             curr = str(board[i][j] if type(board[i][j]) is int else " ")
-            #curr = str(board[i][j])
+            # curr = str(board[i][j])
 
             if j == 9 - 1:
                 print(curr)
@@ -132,12 +137,14 @@ def read_file(filepath):
             board.append(list(int(s) for s in input_file.readline().split()))
             for j in range(9):
                 if board[i][j] == 0:
-                    board[i][j] = set(range(1, 10))
+                    board[i][j] = list(range(1, 10))
         return board
 
+
 if __name__ == '__main__':
-    board = read_file("board1.txt")
+    board = read_file(sys.argv[1])
 
     print("Solving:")
     print_board(board)
+
     solve(board)
