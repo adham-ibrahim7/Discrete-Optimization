@@ -3,3 +3,4 @@ Attempting to find solutions to memory-intensive problems, using heuristics to s
 
 Completed problems:
 - knapsack
+- sudoku solving

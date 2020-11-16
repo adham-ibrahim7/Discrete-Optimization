@@ -1,4 +1,4 @@
-#Knapsack
+# Knapsack
 
 See `handout.pdf` for problem formulation.
 
