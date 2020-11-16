@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="refactor: optimized knapsack!">
-      <change afterPath="$PROJECT_DIR$/sudoku/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudoku/ex1.txt" afterDir="false" />
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add sudoku starter">
+      <change afterPath="$PROJECT_DIR$/sudoku/sudokuForrestKnight.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/ex1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/board1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/sudoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,95 +75,11 @@
       <recent name="old" />
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\sudoku\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.sudoku">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Discrete Optimization" />
-      <option name="PROGRAM_PARAMETERS" value="-file=C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\knapsack\data\ks_4_0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="solver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Discrete Optimization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/knapsack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knapsack/solver.py" />
-      <option name="PARAMETERS" value="data\ks_10000_0" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="solver2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Discrete Optimization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku/solver2.py" />
-      <option name="PARAMETERS" value="ex1.txt" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="submit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Discrete Optimization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/knapsack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knapsack/submit.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sudoku" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,7 +87,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -186,20 +102,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sudokuForrestKnight" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Discrete Optimization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku/sudokuForrestKnight.py" />
+      <option name="PARAMETERS" value="board1.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Python.solver" />
-      <item itemvalue="Python.submit" />
+      <item itemvalue="Python.sudokuForrestKnight" />
       <item itemvalue="Python.sudoku" />
-      <item itemvalue="Python.solver2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.sudoku" />
-        <item itemvalue="Python.solver2" />
-        <item itemvalue="Python.solver" />
-        <item itemvalue="Python.submit" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +164,22 @@
       <workItem from="1605152548680" duration="990000" />
       <workItem from="1605188737285" duration="117000" />
       <workItem from="1605194644523" duration="585000" />
-      <workItem from="1605218043583" duration="8744000" />
+      <workItem from="1605218043583" duration="8813000" />
+      <workItem from="1605232208044" duration="89000" />
+      <workItem from="1605271962133" duration="1362000" />
+      <workItem from="1605285093511" duration="7000" />
+      <workItem from="1605286408148" duration="17000" />
+      <workItem from="1605286442896" duration="11000" />
+      <workItem from="1605286483287" duration="130000" />
+      <workItem from="1605287404218" duration="301000" />
+      <workItem from="1605309001626" duration="172000" />
+      <workItem from="1605309187775" duration="8894000" />
+      <workItem from="1605402793492" duration="5575000" />
+      <workItem from="1605409802295" duration="1125000" />
+      <workItem from="1605413579594" duration="2092000" />
+      <workItem from="1605479851975" duration="3455000" />
+      <workItem from="1605484874550" duration="16000" />
+      <workItem from="1605488528548" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -256,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604976722014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add sudoku starter">
+      <created>1605232091401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605232091401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,21 +231,22 @@
     <MESSAGE value="refactor: create branch and bound abstraction, add depth first solution" />
     <MESSAGE value="refactor: attempt better branch and bound to no avail" />
     <MESSAGE value="refactor: optimized knapsack!" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: optimized knapsack!" />
+    <MESSAGE value="add sudoku starter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sudoku starter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="520" y="236" key="#Notifications" timestamp="1604452637252">
+    <state x="520" y="236" key="#Notifications" timestamp="1605311278147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="520" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1604452637252" />
+    <state x="520" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605311278147" />
     <state x="249" y="0" key="#Project_Structure" timestamp="1604426071269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604426071269" />
-    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605220598463">
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605488542260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605220598463" />
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605488542260" />
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604968222118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,30 +279,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604632153868" />
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1605232035166">
+    <state width="1493" height="409" key="GridCell.Tab.0.bottom" timestamp="1605488601176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605232035166" />
-    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1605232035165">
+    <state width="1493" height="409" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
+    <state width="1493" height="409" key="GridCell.Tab.0.center" timestamp="1605488601176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605232035165" />
-    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1605232035164">
+    <state width="1493" height="409" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
+    <state width="1493" height="409" key="GridCell.Tab.0.left" timestamp="1605488601176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605232035164" />
-    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1605232035165">
+    <state width="1493" height="409" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
+    <state width="1493" height="409" key="GridCell.Tab.0.right" timestamp="1605488601176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605232035165" />
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605231534509">
+    <state width="1493" height="409" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605488601176" />
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605484388566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605231534509" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604976724753">
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605484388566" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605232104153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604976724753" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605232104153" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605232217886">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605232217886" />
     <state x="320" y="148" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604360130929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,18 +315,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="772" y="137" width="579" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605231318138" />
-    <state x="209" y="33" key="new project wizard" timestamp="1605096370763">
+    <state x="209" y="33" key="new project wizard" timestamp="1605408653009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605096370763" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1605050632792">
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605408653009" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605319914418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605050632792" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605010512902">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605319914418" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605480147270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605010512902" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605480147270" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -385,8 +343,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605232025086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1605488561562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604976357337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1605010394139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
   </component>

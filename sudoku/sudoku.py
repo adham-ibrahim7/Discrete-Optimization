@@ -1,40 +1,22 @@
-def filled(board, i, j):
-    """
-    Determine if [i][j] is unfilled, the algorithm has not chosen a number to fill
-    this square yet
-    """
+from copy import deepcopy
 
+
+def filled(board, i, j):
     return type(board[i][j]) is int
 
 
-def single_value(board, i, j):
-    """
-    Fill a value if there is only one feasible value left
-    """
-
-    if not filled(board, i, j) and len(board[i][j]) == 1:
-        board[i][j] = board[i][j][0]
-
-    return board
-
-
 def standard_constraints(board, r, c):
-    """
-    For a certain position enforce the row, column, and box constraints, only on squares
-    that could be affected
-    """
-
     for i in range(9):
         if not filled(board, i, c) and board[r][c] in board[i][c]:
             board[i][c].remove(board[r][c])
-            if len(board[i][c]) == 0:
-                return None
+            #if len(board[i][c]) == 0:
+            #    return None
 
     for j in range(9):
         if not filled(board, r, j) and board[r][c] in board[r][j]:
             board[r][j].remove(board[r][c])
-            if len(board[r][j]) == 0:
-                return None
+            #if len(board[r][j]) == 0:
+            #    return None
 
     i0 = r // 3 * 3
     j0 = c // 3 * 3
@@ -43,8 +25,8 @@ def standard_constraints(board, r, c):
         for j in range(j0, j0 + 3):
             if not filled(board, i, j) and board[r][c] in board[i][j]:
                 board[i][j].remove(board[r][c])
-                if len(board[i][j]) == 0:
-                    return None
+                #if len(board[i][j]) == 0:
+                #    return None
 
     return board
 
@@ -67,36 +49,60 @@ def check_valid(board, r, c):
 
     return valid
 
-def search(board):
-    if not board:
-        return None
+
+def search(board, empty_positions, calls):
+    if len(empty_positions) == 0:
+        print("SUCCESS! " + str(calls) + " calls made to search()")
+        print_board(board)
+        if check_board(board):
+            print("ensured constraints are met")
+        return True
+
+    i, j = empty_positions[0]
+
+    for n in board[i][j]:
+        temp = board[i][j].copy()
+        board[i][j] = n
+        if search(standard_constraints(deepcopy(board), i, j), empty_positions[1:], calls + 1):
+            return True
+        board[i][j] = temp
+    return False
+
+
+def solve(board):
+    empty_positions = []
 
     for i in range(9):
         for j in range(9):
             if filled(board, i, j):
-                continue
-            for n in board[i][j]:
-                temp = board.copy()
-                temp[i][j] = n
-                temp = standard_constraints(board, i, j)
-                attempt = search(temp)
-                if attempt:
-                    return attempt
-            return None
-    else:
-        return board
+                board = standard_constraints(board, i, j)
+            else:
+                empty_positions.append((i, j))
 
-def solve(board):
+    search(board, empty_positions, 0)
+
+
+def check_board(board):
     for i in range(9):
-        for j in range(9):
-            board = standard_constraints(board, i, j)
-    return search(board)
+        if len(set(board[i][j] for j in range(9))) < 9:
+            return False
+
+    for j in range(9):
+        if len(set(board[i][j] for i in range(9))) < 9:
+            return False
+
+    for i in range(0, 9, 3):
+        for j in range(0, 9, 3):
+            box = set()
+            for k in range(i, i+3):
+                for h in range(j, j+3):
+                    box.add(board[k][h])
+            if len(box) < 9:
+                return False
+
+    return True
 
 def print_board(board):
-    """
-    Pretty print the board
-    """
-
     if board is None:
         print("NULL BOARD")
         return
@@ -109,7 +115,7 @@ def print_board(board):
             if j > 0 and j % 3 == 0:
                 print(" | ", end="")
 
-            curr = str(board[i][j] if type(board[i][j]) is int else 0)
+            curr = str(board[i][j] if type(board[i][j]) is int else " ")
             #curr = str(board[i][j])
 
             if j == 9 - 1:
@@ -120,34 +126,18 @@ def print_board(board):
 
 
 def read_file(filepath):
-    import sys
-
     with open(filepath) as input_file:
         board = []
         for i in range(9):
             board.append(list(int(s) for s in input_file.readline().split()))
             for j in range(9):
                 if board[i][j] == 0:
-                    board[i][j] = list(range(1, 10))
+                    board[i][j] = set(range(1, 10))
         return board
-    return None
-
 
 if __name__ == '__main__':
-    """
-    board = [[0, 3, 4, 6, 7, 8, 9, 1, 2],
-             [6, 7, 2, 1, 9, 5, 3, 4, 8],
-             [1, 9, 8, 3, 4, 2, 5, 6, 7],
-             [8, 5, 9, 7, 6, 1, 4, 2, 3],
-             [4, 2, 6, 8, 5, 3, 7, 9, 1],
-             [7, 1, 3, 9, 2, 4, 8, 5, 6],
-             [9, 6, 1, 5, 3, 7, 2, 8, 4],
-             [2, 8, 7, 4, 1, 9, 6, 3, 5],
-             [3, 4, 5, 2, 8, 6, 1, 7, 9]]
-    """
+    board = read_file("board1.txt")
 
-    board = read_file("ex1.txt")
-
+    print("Solving:")
     print_board(board)
-
-    print_board(solve(board))
+    solve(board)
