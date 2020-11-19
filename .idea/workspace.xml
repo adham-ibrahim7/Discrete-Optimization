@@ -19,8 +19,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add random sudoku generation; add sudoku readme">
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="update knapsack readme">
+      <change afterPath="$PROJECT_DIR$/graph coloring/sol.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/_coursera" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/_coursera" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_1000_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_1000_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_1000_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_1000_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_1000_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_1000_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_1000_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_1000_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_1000_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_1000_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_100_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_100_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_100_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_100_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_100_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_100_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_100_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_100_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_100_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_100_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_20_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_20_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_20_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_20_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_20_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_20_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_20_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_20_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_20_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_20_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_250_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_250_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_250_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_250_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_250_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_250_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_250_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_250_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_250_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_250_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_4_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_4_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_500_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_500_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_500_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_500_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_500_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_500_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_500_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_500_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_500_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_500_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_50_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_50_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_50_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_50_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_50_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_50_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_50_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_50_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_50_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_50_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_70_1" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_70_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_70_3" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_70_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_70_5" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_70_5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_70_7" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_70_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/data/gc_70_9" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/data/gc_70_9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/handout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/handout.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/submit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +102,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3494253" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -72,11 +115,23 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\graph coloring\coloring" />
       <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\sudoku\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sudoku_solver">
-    <configuration name="generate_random" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="solver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,12 +139,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph coloring" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku/generate_random.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\graph coloring\coloring\solver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sudoku_solver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="solver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,13 +161,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Adham Ibrahim\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sudoku" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph coloring" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku/sudoku_solver.py" />
-      <option name="PARAMETERS" value="board1.txt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph coloring/solver.py" />
+      <option name="PARAMETERS" value="data\gc_20_7" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -120,14 +175,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.sudoku_solver" />
-      <item itemvalue="Python.generate_random" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sudoku_solver" />
-        <item itemvalue="Python.generate_random" />
+        <item itemvalue="Python.solver" />
+        <item itemvalue="Python.solver (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +229,8 @@
       <workItem from="1605484874550" duration="16000" />
       <workItem from="1605488528548" duration="5259000" />
       <workItem from="1605496529967" duration="282000" />
+      <workItem from="1605499211258" duration="575000" />
+      <workItem from="1605739437770" duration="8679000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -221,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605495950961</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add knapsack readme">
+      <created>1605499529836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605499529836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update knapsack readme">
+      <created>1605499642597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605499642597</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,13 +313,19 @@
     <MESSAGE value="add sudoku starter" />
     <MESSAGE value="faster sudoku" />
     <MESSAGE value="add random sudoku generation; add sudoku readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add random sudoku generation; add sudoku readme" />
+    <MESSAGE value="add knapsack readme" />
+    <MESSAGE value="update knapsack readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update knapsack readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1605495861895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1605495861895" />
+    <state x="361" y="71" key="#Intentions" timestamp="1605746174772">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1605746174772" />
     <state x="520" y="236" key="#Notifications" timestamp="1605311278147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -261,10 +334,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604426071269" />
-    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605495782589">
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605747274558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605495782589" />
+    <state x="307" y="66" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605747274558" />
+    <state x="632" y="128" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1605745080836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="632" y="128" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1605745080836" />
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604968222118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,46 +374,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604632153868" />
-    <state width="468" height="696" key="GridCell.Tab.0.bottom" timestamp="1605496813408">
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1605748355629">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="468" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605496813408" />
-    <state width="468" height="696" key="GridCell.Tab.0.center" timestamp="1605496813408">
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605748355629" />
+    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1605748355628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="468" height="696" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605496813408" />
-    <state width="468" height="696" key="GridCell.Tab.0.left" timestamp="1605496813408">
+    <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605748355628" />
+    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1605748355628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="468" height="696" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605496813408" />
-    <state width="468" height="696" key="GridCell.Tab.0.right" timestamp="1605496813408">
+    <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605748355628" />
+    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1605748355628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="468" height="696" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605496813408" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605496161057">
+    <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605748355628" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605747228724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605496161057" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605496161057">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605747228724" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605747228724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605496161057" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605496161057">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605747228724" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605747228724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605496161057" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605496161057">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605747228724" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605747228724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605496161057" />
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605484388566">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605747228724" />
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605742728679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605484388566" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605495959033">
+    <state x="337" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605742728679" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605499650981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605495959033" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605499650981" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605491037823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,10 +434,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605319914418" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605480147270">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605742306741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605480147270" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605742306741" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -383,7 +460,8 @@
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1604976357337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1605010394139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1605496583741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver__1_.coverage" NAME="solver (1) Coverage Results" MODIFIED="1605743992879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1605739469149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1605747275828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />
   </component>
 </project>
