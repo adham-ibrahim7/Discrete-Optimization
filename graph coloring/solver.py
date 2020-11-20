@@ -1,26 +1,34 @@
 from copy import deepcopy
+from random import shuffle
 
 
 def constrain(i, adj, coloring, c):
     for j in adj[i]:
-        if type(coloring[j]) is list and c in coloring[j]:
+        if not type(coloring[j]) is int and c in coloring[j]:
             coloring[j].remove(c)
     return coloring
 
 
+calls = 0
+
+
+#INEFFICIENCIES: copying, linear min search, maybe memory?
 def color(nodes, adj, coloring, uncolored):
+    global calls
+    calls += 1
+
     if len(uncolored) == 0:
         return True, coloring
 
-    i = uncolored[0]
+    (_, _, uncolored_node, index) = min((len(coloring[uncolored_node]), len(adj[uncolored_node]), uncolored_node, index) for (index, uncolored_node) in enumerate(uncolored))
 
-    domain = coloring[i].copy()
+    domain = coloring[uncolored_node].copy()
     for c in domain:
-        coloring[i] = c
-        next_success, solution = color(nodes, adj, constrain(i, adj, deepcopy(coloring), c), uncolored[1:])
+        coloring[uncolored_node] = c
+        next_success, solution = color(nodes, adj, constrain(uncolored_node, adj, deepcopy(coloring), c), uncolored[:index] + uncolored[index+1:])
         if next_success:
             return True, solution
-        coloring[i] = domain
+        coloring[uncolored_node] = domain
     return False, None
 
 
@@ -40,10 +48,15 @@ def solve_it(input_data):
         adj[v].append(u)
     # print(adj)
 
-    for max_color in range(10):
-        print(max_color)
-        coloring, uncolored = [list(range(max_color)) for _ in range(node_count)], list(range(node_count))
+    global calls
+    for max_color in range(6, 15):
+        print("----" + str(max_color) + " colors----")
+        coloring, uncolored = [set(range(max_color)) for _ in range(node_count)], list(range(node_count))
         success, solution = color(node_count, adj, coloring, uncolored)
+
+        print(str(calls) + " calls")
+        calls = 0
+
         if success:
             return solution
 
@@ -67,5 +80,4 @@ if __name__ == '__main__':
             f.write(str(num_colors + 1) + " 1\n")
             f.write(coloring_str + "\n")
     else:
-        print(
-            'This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/gc_4_1)')
+        print('This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/gc_4_1)')
