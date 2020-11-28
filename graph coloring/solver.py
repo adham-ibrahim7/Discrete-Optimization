@@ -1,55 +1,46 @@
-from copy import deepcopy
-from random import shuffle
+from random import shuffle, choice, random
 
 
-def constrain(i, adj, coloring, c):
-    for j in adj[i]:
-        if not type(coloring[j]) is int and c in coloring[j]:
-            coloring[j].remove(c)
-    return coloring
+def greedy(node_count, nodes, adj):
+    """
+    With a certain ordering of the nodes, perform the greedy coloring algorithm
+    """
 
-
-calls = 0
-
-
-def backtrack(nodes, adj, coloring, uncolored):
-    global calls
-
-    if calls == 5_000_000:
-        return False, None
-
-    calls += 1
-
-    if len(uncolored) == 0:
-        return True, coloring
-
-    (_, _, uncolored_node, index) = min((len(coloring[uncolored_node]), len(adj[uncolored_node]), uncolored_node, index) for (index, uncolored_node) in enumerate(uncolored))
-
-    domain = coloring[uncolored_node].copy()
-    #shuffle(domain)
-    for c in domain:
-        coloring[uncolored_node] = c
-        next_success, solution = backtrack(nodes, adj, constrain(uncolored_node, adj, deepcopy(coloring), c), uncolored[:index] + uncolored[index + 1:])
-        if next_success:
-            return True, solution
-        coloring[uncolored_node] = domain
-    return False, None
-
-
-def greedy(number_nodes, adj):
-    nodes = sorted(list(range(number_nodes)), key=lambda node: len(adj[node]), reverse=True)
-    color_map = list(-1 for _ in range(number_nodes))
+    color_list = list(-1 for _ in range(node_count))
 
     for node in nodes:
-        available_colors = set(range(number_nodes))
+        available_colors = set(range(node_count))
         for neighbor in adj[node]:
-            if color_map[neighbor] > -1:
-                neigh_color = color_map[neighbor]
+            if color_list[neighbor] > -1:
+                neigh_color = color_list[neighbor]
                 if neigh_color in available_colors:
                     available_colors.remove(neigh_color)
-        color_map[node] = min(available_colors)
 
-    return color_map
+        color_list[node] = min(available_colors)
+
+    return color_list
+
+
+def permute_solution(node_count, prev_solution, adj):
+    """
+    Given a solution, group nodes by colors, then within these groups sort by descending degree
+    Shuffle these groups and concatenate, then do the greedy solution on this new node ordering
+    This process is guaranteed to produce no worse of a solution than the one it is given
+    """
+
+    nodes_lists = []
+    for color in range(node_count):
+        curr_color = list(node for node in range(node_count) if prev_solution[node] == color)
+        curr_color.sort(key=lambda node: len(adj[node]), reverse=True)
+        nodes_lists.append(curr_color)
+
+    shuffle(nodes_lists)
+
+    nodes = []
+    for node_list in nodes_lists:
+        nodes.extend(node_list)
+
+    return greedy(node_count, nodes, adj)
 
 
 def solve_it(input_data):
@@ -67,29 +58,33 @@ def solve_it(input_data):
         adj[u].append(v)
         adj[v].append(u)
 
-    '''
-    global calls
-    for max_color in range(5, 15):
-        print("----" + str(max_color) + " colors----")
-        coloring, uncolored = [list(range(max_color)) for _ in range(node_count)], list(range(node_count))
-        success, solution = backtrack(node_count, adj, coloring, uncolored)
+    nodes = sorted(list(range(node_count)), key=lambda node: len(adj[node]), reverse=True)
+    solution = greedy(node_count, nodes, adj)
 
-        print(str(calls) + " calls")
-        calls = 0
+    #if node_count == 1000:
+    #    solution = read_sol("gc_1000_5_sol.txt")
 
-        if success:
-            return solution
-    '''
+    iterations = 10000
+    for i in range(iterations):
+        if i % 10 == 0:
+            with open("progress.txt", 'w') as f:
+                f.write(str(i) + " iterations, " + str(max(solution) + 1) + " colors")
+        solution = permute_solution(node_count, solution, adj)
 
-    solution = greedy(node_count, adj)
+    return stringify(solution)
 
+
+def stringify(solution):
     coloring_str = ""
-    num_colors = 0
     for c in solution:
         coloring_str += str(c) + " "
-        num_colors = max(num_colors, c)
+    return str(max(solution) + 1) + " 0\n" + coloring_str
 
-    return str(num_colors + 1) + " 0\n" + coloring_str
+
+def read_sol(file_location):
+    with open(file_location, "r") as f:
+        f.readline()
+        return list(int(s) for s in f.readline().split(" "))
 
 
 if __name__ == '__main__':
@@ -97,12 +92,19 @@ if __name__ == '__main__':
 
     if len(sys.argv) > 1:
         file_location = sys.argv[1].strip()
-        #print("Solving: " + file_location)
         with open(file_location, 'r') as input_data_file:
             input_data = input_data_file.read()
-        #with open("sol.txt", 'w') as f:
-            #f.write(solve_it(input_data))
 
-        print(solve_it(input_data))
+        print_to_file = False
+
+        if print_to_file:
+            print("Solving: " + file_location)
+
+            with open("sol.txt", 'w') as f:
+                f.write(solve_it(input_data))
+        else:
+            print(solve_it(input_data))
+
     else:
-        print('This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/gc_4_1)')
+        print(
+            'This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/gc_4_1)')
