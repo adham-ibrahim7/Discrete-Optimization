@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="iterated greedy coloring">
-      <change afterPath="$PROJECT_DIR$/graph coloring/solutions/gc_1000_5_sol.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph coloring/solutions/gc_1000_5_sol_copy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph coloring/gc_1000_5_sol.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph coloring/progress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/progress.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph coloring/sol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph coloring/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/solver.py" afterDir="false" />
-    </list>
+    <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="save colorings in solutions/ and add coloring docs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,7 +280,7 @@
       <workItem from="1606746727492" duration="4000" />
       <workItem from="1606832200336" duration="17000" />
       <workItem from="1606840538051" duration="7000" />
-      <workItem from="1606868441886" duration="867000" />
+      <workItem from="1606868441886" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -377,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606537116788</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="save colorings in solutions/ and add coloring docs">
+      <created>1606869558961</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606869558961</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +407,8 @@
     <MESSAGE value="add min domain search" />
     <MESSAGE value="welsh-powell coloring" />
     <MESSAGE value="iterated greedy coloring" />
-    <option name="LAST_COMMIT_MESSAGE" value="iterated greedy coloring" />
+    <MESSAGE value="save colorings in solutions/ and add coloring docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="save colorings in solutions/ and add coloring docs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1605495861895">
@@ -524,10 +521,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1606508415427" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606537120542">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606869572475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606537120542" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606869572475" />
     <state x="640" y="257" key="cloudConfig.SelfSettingsDialog" timestamp="1606582152262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
