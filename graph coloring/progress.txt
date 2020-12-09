@@ -1,1 +1,1 @@
-20000 iterations, 106 colors
+10000 iterations, 6 colors

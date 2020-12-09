@@ -1,51 +1,9 @@
 import os
-from random import shuffle
 from stopwatch import Stopwatch
+from greedy_iteration import greedy, permute_nodes
 
 
-def greedy(node_count, nodes, adj):
-    """
-    With a certain ordering of the nodes, perform the greedy coloring algorithm
-    """
-
-    color_map = list(-1 for _ in range(node_count))
-
-    for node in nodes:
-        neigh_colors = set(color_map[neighbor] for neighbor in adj[node])
-
-        for color in range(node_count):
-            if color not in neigh_colors:
-                color_map[node] = color
-                break
-
-    return color_map
-
-
-def permute_nodes(node_count, prev_solution, adj):
-    """
-    Given a solution, group nodes by colors, then within these groups sort by descending degree
-    Shuffle these groups and concatenate, then do the greedy solution on this new node ordering
-    This process is guaranteed to produce no worse of a solution than the one it is given
-    """
-
-    nodes_lists = []
-    for color in range(node_count):
-        curr_color = list(node for node in range(node_count) if prev_solution[node] == color)
-        if len(curr_color) == 0:
-            break
-        curr_color.sort(key=lambda node: len(adj[node]), reverse=True)
-        nodes_lists.append(curr_color)
-
-    shuffle(nodes_lists)
-
-    nodes = []
-    for node_list in nodes_lists:
-        nodes.extend(node_list)
-
-    return nodes
-
-
-def solve_it(input_data, prev_sol=None):
+def solve_it(input_data, prev_sol=None, iterations=10000):
     lines = input_data.split('\n')
 
     first_line = lines[0].split()
@@ -72,7 +30,6 @@ def solve_it(input_data, prev_sol=None):
     stopwatch_permute = Stopwatch()
     stopwatch_permute.stop()
 
-    iterations = 20000
     for i in range(1, iterations + 1):
         if i % 10 == 0:
             with open("progress.txt", 'w') as f:
@@ -116,7 +73,19 @@ if __name__ == '__main__':
         with open(file_location, 'r') as input_data_file:
             input_data = input_data_file.read()
 
-        print_to_file = True
+        iterations = 10000
+        output_file = None
+
+        if len(sys.argv) > 2:
+            if sys.argv[2].isnumeric():
+                iterations = int(sys.argv[2])
+            else:
+                output_file = sys.argv[2].strip()
+
+        if len(sys.argv) > 3:
+            iterations = int(sys.argv[3])
+
+        print_to_file = False #output_file is not None
 
         stopwatch = Stopwatch()
         if print_to_file:
@@ -124,8 +93,8 @@ if __name__ == '__main__':
 
             prev_sol = read_sol("solutions/" + file_location[5:] + "_sol.txt")
 
-            with open("solutions/" + file_location[5:] + "_sol.txt", 'w+') as f:
-                f.write(solve_it(input_data, prev_sol))
+            with open("solutions/" + output_file, 'w+') as f:
+                f.write(solve_it(input_data))
         else:
             print(solve_it(input_data))
 

@@ -35,6 +35,7 @@ This local optimum is usually not the global optimum, at least for large graphs.
 TODO:
 - Implement local search optima finding. Remove a color, and fix violations until a feasible coloring
  with one less color is found
+- Prove optimality
 
 A visualizer that can take a coloring produced by `solver.py` is found here https://discreteoptimization.github.io/vis/coloring/.
 
