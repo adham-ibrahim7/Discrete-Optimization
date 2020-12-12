@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/knapsack/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/knapsack/data" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/sudoku/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/graph coloring/data" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/tsp/data" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/anyint" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
