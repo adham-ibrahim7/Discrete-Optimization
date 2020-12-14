@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
-      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_100_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_200_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_51_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_574_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/localsearch_tsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/localsearch_tsp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/submit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/temp_sol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/temp_sol.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +89,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.solver">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="solver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,7 +249,8 @@
       <workItem from="1607805798884" duration="2117000" />
       <workItem from="1607809933996" duration="11908000" />
       <workItem from="1607912535409" duration="6030000" />
-      <workItem from="1607946824293" duration="9168000" />
+      <workItem from="1607946824293" duration="9462000" />
+      <workItem from="1607981409462" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -389,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607817212289</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add random restarts - passes assignment">
+      <created>1607958650676</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958650676</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +417,8 @@
     <MESSAGE value="begin local search on coloring; add tsp data" />
     <MESSAGE value="fix tsp data" />
     <MESSAGE value="two opt storing configurations as arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="two opt storing configurations as arrays" />
+    <MESSAGE value="add random restarts - passes assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add random restarts - passes assignment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -451,7 +441,7 @@
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1605739469149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1607958209718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1607958409950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$temp.coverage" NAME="temp Coverage Results" MODIFIED="1605493584041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1607958229258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
