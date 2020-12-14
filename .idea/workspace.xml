@@ -20,15 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
-      <change afterPath="$PROJECT_DIR$/tsp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/localsearch_tsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/temp_sol.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsp/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_100_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_200_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_51_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsp/solutions/tsp_574_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph coloring/progress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graph coloring/progress.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/localsearch_tsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/localsearch_tsp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsp/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/submit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/temp_sol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/temp_sol.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tsp/solver.py" />
-      <option name="PARAMETERS" value="data\tsp_51_1" />
+      <option name="PARAMETERS" value="./data/tsp_200_2" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -265,7 +266,9 @@
       <workItem from="1607645718279" duration="7384000" />
       <workItem from="1607690943856" duration="54000" />
       <workItem from="1607805798884" duration="2117000" />
-      <workItem from="1607809933996" duration="4376000" />
+      <workItem from="1607809933996" duration="11908000" />
+      <workItem from="1607912535409" duration="6030000" />
+      <workItem from="1607946824293" duration="9168000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -379,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607532994613</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="two opt storing configurations as arrays">
+      <created>1607817212289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817212289</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +427,8 @@
     <MESSAGE value="add rest of coloring solution files" />
     <MESSAGE value="begin local search on coloring; add tsp data" />
     <MESSAGE value="fix tsp data" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tsp data" />
+    <MESSAGE value="two opt storing configurations as arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="two opt storing configurations as arrays" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -440,10 +451,10 @@
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1605739469149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1607811703380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1607958209718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$temp.coverage" NAME="temp Coverage Results" MODIFIED="1605493584041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1607810764069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1607958229258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tsp" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
   </component>
 </project>
