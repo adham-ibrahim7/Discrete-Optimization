@@ -1,7 +1,7 @@
 from collections import namedtuple
 from random import randint, random
 
-from tsp.util import dist, create_greedy_permutation, Point
+from util import dist, create_greedy_permutation, Point
 
 
 def reverse(configuration, i, j):
@@ -73,7 +73,7 @@ def two_opt(coordinates, configuration, cost):
                                                                                                              coordinates)
 
 
-def k_opt(node_count, coordinates: list[Point], adj: list[list[int]], cost):
+def k_opt(node_count, coordinates, adj, cost):
     def disconnect(a, b):
         adj[a].remove(b)
         adj[b].remove(a)
@@ -85,9 +85,11 @@ def k_opt(node_count, coordinates: list[Point], adj: list[list[int]], cost):
     t1 = max(range(node_count), key=lambda node: dist(coordinates[node], coordinates[adj[node][0]]))
     t2 = adj[t1][0]
 
+    print("T1T2", t1, t2)
+
     disconnect(t1, t2)
 
-    for _ in range(1000):
+    for _ in range(1):
         for t3 in range(node_count):
             if dist(coordinates[t2], coordinates[t3]) < dist(coordinates[t1], coordinates[t2]):
                 break
@@ -99,6 +101,10 @@ def k_opt(node_count, coordinates: list[Point], adj: list[list[int]], cost):
         disconnect(t3, t4)
         connect(t2, t3)
         t2 = t4
+
+        print("T3T4", t3, t4)
+
+        # TODO DIRECTED EDGES! (but like ... reverse them right so yeah lol)
 
     connect(t1, t2)
 

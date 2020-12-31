@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 import os
 
-from tsp.localsearch_tsp import *
-from tsp.util import *
+from localsearch_tsp import *
+from util import *
 
 
 def solve_it(input_data, input_file=""):
@@ -22,12 +22,23 @@ def solve_it(input_data, input_file=""):
 
     solution_path = "solutions/" + input_file[7:] + ".txt"
 
-    if False: #os.path.exists(solution_path):
+    if os.path.exists(solution_path):
         f = open(solution_path, "r")
         best_cost, _ = map(float, f.readline().split())
         best_tour = f.readline().split()
     else:
         best_tour, best_cost = local_search(node_count, coordinates, create_greedy_permutation, two_opt_on_list, 1000)
+
+    '''
+    best_adj, best_cost = create_greedy_adj(node_count, coordinates)
+    k_opt(node_count, coordinates, best_adj, best_cost)
+
+    for u in range(node_count):
+        for v in best_adj[u]:
+            print(u, v)
+
+    best_tour = convert_adj_to_permutation(node_count, best_tour)
+    '''
 
     # prepare the solution in the specified output format
     output_data = '%.2f' % best_cost + ' ' + str(0) + '\n'
