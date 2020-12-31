@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from collections import namedtuple
+from ortools.linear_solver import pywraplp
+
 Item = namedtuple("Item", ['index', 'value', 'weight'])
+
 
 def solve_it(input_data):
     # Modify this code to run your optimization algorithm
@@ -21,21 +24,28 @@ def solve_it(input_data):
         parts = line.split()
         items.append(Item(i-1, int(parts[0]), int(parts[1])))
 
-    # a trivial algorithm for filling the knapsack
-    # it takes items in-order until the knapsack is full
-    value = 0
-    weight = 0
-    taken = [0]*len(items)
+    solver = pywraplp.Solver.CreateSolver('SCIP')
+
+    taken = {}
+    for item in items:
+        taken[item] = solver.IntVar(0, 1, '')
+
+    solver.Add(sum(taken[item] * item.weight for item in items) <= capacity)
+    solver.Maximize(sum(taken[item] * item.value for item in items))
+
+    # lower tolerance for better solution?
+    solver_parameters = pywraplp.MPSolverParameters()
+    solver_parameters.SetDoubleParam(pywraplp.MPSolverParameters.PRIMAL_TOLERANCE, 0.00001)
+    solver.Solve(solver_parameters)
+
+    solution = []
 
     for item in items:
-        if weight + item.weight <= capacity:
-            taken[item.index] = 1
-            value += item.value
-            weight += item.weight
+        solution.append(taken[item].solution_value())
     
     # prepare the solution in the specified output format
-    output_data = str(value) + ' ' + str(0) + '\n'
-    output_data += ' '.join(map(str, taken))
+    output_data = str(int(solver.Objective().Value())) + ' ' + str(0) + '\n'
+    output_data += ' '.join(str(int(c)) for c in solution)
     return output_data
 
 
@@ -47,5 +57,5 @@ if __name__ == '__main__':
             input_data = input_data_file.read()
         print(solve_it(input_data))
     else:
-        print('This test requires an input file.  Please select one from the data directory. (i.e. python solverUNUSED.py ./data/ks_4_0)')
+        print('This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/ks_4_0)')
 
