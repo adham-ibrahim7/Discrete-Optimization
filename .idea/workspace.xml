@@ -23,15 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
-      <change afterPath="$PROJECT_DIR$/facility location/facility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/test_ortools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knapsack/solver_temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/formulation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_1000_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_100_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_100_7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_2000_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_200_7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_25_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_500_7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_50_6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facility location/facility.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/facility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facility location/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack/solverUNUSED.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/facility location/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/submit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +57,14 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -81,7 +97,7 @@
     <property name="project.structure.side.proportion" value="0.3494253" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -91,6 +107,7 @@
       <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\graph coloring\solutions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\facility location\solutions" />
       <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\graph coloring\solutions" />
       <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\graph coloring\coloring" />
       <recent name="C:\Users\Adham Ibrahim\OneDrive\Documents\courses\Discrete Optimization\sudoku\src" />
@@ -119,29 +136,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/facility location/solver.py" />
-      <option name="PARAMETERS" value="data\fl_3_1" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="knapsack_mip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Discrete Optimization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/knapsack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\knapsack\knapsack_mip.py" />
-      <option name="PARAMETERS" value="./data/ks_10000_0" />
+      <option name="PARAMETERS" value="./data/fl_500_7" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -157,12 +152,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/knapsack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/facility location" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knapsack/submit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/facility location/submit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,15 +189,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_ortools" />
       <item itemvalue="Python.facility solver" />
       <item itemvalue="Python.submit" />
-      <item itemvalue="Python.knapsack_mip" />
+      <item itemvalue="Python.test_ortools" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.submit" />
-        <item itemvalue="Python.knapsack_mip" />
         <item itemvalue="Python.facility solver" />
         <item itemvalue="Python.test_ortools" />
       </list>
@@ -308,7 +301,9 @@
       <workItem from="1609382240808" duration="29000" />
       <workItem from="1609384132726" duration="1114000" />
       <workItem from="1609385267982" duration="328000" />
-      <workItem from="1609385713764" duration="3732000" />
+      <workItem from="1609385713764" duration="24895000" />
+      <workItem from="1609455015053" duration="7925000" />
+      <workItem from="1609479899358" duration="591000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -450,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608429304300</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="solve knapsack with mip 60/60">
+      <created>1609392283981</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609392283981</updated>
+    </task>
+    <task id="LOCAL-00022" summary="solve knapsack with mip 60/60">
+      <created>1609392338190</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609392338190</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +502,8 @@
     <MESSAGE value="add random restarts - passes assignment" />
     <MESSAGE value="update tsp readme" />
     <MESSAGE value="clean up; begin k-opt" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up; begin k-opt" />
+    <MESSAGE value="solve knapsack with mip 60/60" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve knapsack with mip 60/60" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,13 +521,13 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$facility_solver.coverage" NAME="facility solver Coverage Results" MODIFIED="1609387899988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$facility_solver.coverage" NAME="facility solver Coverage Results" MODIFIED="1609466677236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$knapsack_mip.coverage" NAME="knapsack_mip Coverage Results" MODIFIED="1609391305472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver__1_.coverage" NAME="facility solver Coverage Results" MODIFIED="1609381377504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$test_ortools.coverage" NAME="test_ortools Coverage Results" MODIFIED="1609384564905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1609377826082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1609391891827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1609466741812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1609387433523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />
