@@ -23,23 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
-      <change afterPath="$PROJECT_DIR$/facility location/formulation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solution.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_1000_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_100_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_100_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_2000_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_200_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_25_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_500_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facility location/solutions/fl_50_6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/mip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/temp-solutions/sub_1_fl_500_7_0.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/temp-solutions/sub_1_fl_500_7_1.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/temp-solutions/sub_1_fl_500_7_2.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facility location/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Discrete Optimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Discrete Optimization.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facility location/facility.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/facility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facility location/facility.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/facility location/solutions/fl_100_1" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/solutions/fl_100_1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facility location/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facility location/submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/facility location/submit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
     <property name="project.structure.side.proportion" value="0.3494253" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -121,7 +115,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.submit">
+  <component name="RunManager" selected="Python.facility solver">
     <configuration name="facility solver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Discrete Optimization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,8 +189,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.submit" />
         <item itemvalue="Python.facility solver" />
+        <item itemvalue="Python.submit" />
         <item itemvalue="Python.test_ortools" />
       </list>
     </recent_temporary>
@@ -304,6 +298,8 @@
       <workItem from="1609385713764" duration="24895000" />
       <workItem from="1609455015053" duration="7925000" />
       <workItem from="1609479899358" duration="591000" />
+      <workItem from="1609519444804" duration="850000" />
+      <workItem from="1609528688314" duration="9725000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -459,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609392338190</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="facility location solved with or tools 71/80">
+      <created>1609519613741</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609519613741</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +506,8 @@
     <MESSAGE value="update tsp readme" />
     <MESSAGE value="clean up; begin k-opt" />
     <MESSAGE value="solve knapsack with mip 60/60" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve knapsack with mip 60/60" />
+    <MESSAGE value="facility location solved with or tools 71/80" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,13 +525,13 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$facility_solver.coverage" NAME="facility solver Coverage Results" MODIFIED="1609466677236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$facility_solver.coverage" NAME="facility solver Coverage Results" MODIFIED="1609544555830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$knapsack_mip.coverage" NAME="knapsack_mip Coverage Results" MODIFIED="1609391305472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knapsack" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver__1_.coverage" NAME="facility solver Coverage Results" MODIFIED="1609381377504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$test_ortools.coverage" NAME="test_ortools Coverage Results" MODIFIED="1609384564905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1609377826082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1609466741812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1609543152659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1609387433523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />

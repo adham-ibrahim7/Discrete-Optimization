@@ -1,7 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from facility import *
+from mip import *
+
+k = 1
+mip_function = mip_gb
 
 
 def solve_it(input_data, file_location=None):
@@ -32,15 +35,16 @@ def solve_to_file(input_data):
         customers.append(Customer(i - 1 - facility_count, int(parts[0]), Point(float(parts[1]), float(parts[2]))))
 
     # create k * k squares of sub-problems
-    k = 5
     all_places = facilities + customers
-    dx = (max(o.location.x for o in all_places) - min(o.location.x for o in all_places)) / k + 1000
-    dy = (max(o.location.y for o in all_places) - min(o.location.y for o in all_places)) / k + 1000
+    minx = min(o.location.x for o in all_places)
+    miny = min(o.location.y for o in all_places)
+    dx = (max(o.location.x for o in all_places) - minx) / k
+    dy = (max(o.location.y for o in all_places) - miny) / k
 
     bounds = []
     for x in range(0, k):
         for y in range(0, k):
-            bounds.append((x * dx, (x + 1) * dx, y * dy, (y + 1) * dy))
+            bounds.append((x * dx + minx, (x + 1) * dx + minx, y * dy + miny, (y + 1) * dy + miny))
 
     def in_bound(bound, location):
         return bound[0] <= location.x <= bound[1] and bound[2] <= location.y <= bound[3]
@@ -65,8 +69,9 @@ def solve_to_file(input_data):
     full_solution = {}
     full_obj = 0
     for i, (facilities, customers) in enumerate(sub_problems):
-        print("---- Solving sub-problem", i + 1, "/", len(sub_problems), "----")
-        obj, solution = mip(facilities, customers)
+        print("\n---- Solving sub-problem", i + 1, "/", len(sub_problems), "----\n")
+        print("Facilities:", len(facilities), ", Customers:", len(customers))
+        obj, solution = mip_function(facilities, customers, i+1)
         full_obj += obj
         full_solution.update(solution)
 
