@@ -1,51 +1,15 @@
-import math
-from collections import namedtuple
-
 from ortools.linear_solver import pywraplp
 
-Point = namedtuple("Point", ['x', 'y'])
-Facility = namedtuple("Facility", ['index', 'setup_cost', 'capacity', 'location'])
-Customer = namedtuple("Customer", ['index', 'demand', 'location'])
+from util import *
+
+from itertools import product
+
+import gurobipy as gp
+from gurobipy import GRB
 
 
-def length(a: Point, b: Point):
-    return math.sqrt((a.x - b.x) ** 2 + (a.y - b.y) ** 2)
-
-
-def trivial(facilities, customers):
-    # build a trivial solution
-    # pack the facilities one by one until all the customers are served
-    solution = [-1] * len(customers)
-    capacity_remaining = [f.capacity for f in facilities]
-
-    facility_index = 0
-    for customer in customers:
-        if capacity_remaining[facility_index] >= customer.demand:
-            solution[customer.index] = facility_index
-            capacity_remaining[facility_index] -= customer.demand
-        else:
-            facility_index += 1
-            assert capacity_remaining[facility_index] >= customer.demand
-            solution[customer.index] = facility_index
-            capacity_remaining[facility_index] -= customer.demand
-
-    used = [0] * len(facilities)
-    for facility_index in solution:
-        used[facility_index] = 1
-
-    # calculate the cost of the solution
-    obj = sum([f.setup_cost * used[f.index] for f in facilities])
-    for customer in customers:
-        obj += length(customer.location, facilities[solution[customer.index]].location)
-
-    return obj, solution
-
-
-def mip(facilities, customers):
-    print("Facilities:", len(facilities), ", Customers:", len(customers))
-
+def mip_ort(facilities, customers):
     solver = pywraplp.Solver.CreateSolver('SCIP')
-    # solver = pywraplp.Solver('Solver', pywraplp.Solver.CBC_MIXED_INTEGER_PROGRAMMING)
     # solver.SetTimeLimit(15 * 60 * 1000)
 
     open = {}
@@ -58,8 +22,8 @@ def mip(facilities, customers):
         serves[facility] = {}
         dist[facility] = {}
         for customer in customers:
-            serves[facility][customer] = solver.IntVar(0, 1, '')
             dist[facility][customer] = length(facility.location, customer.location)
+            serves[facility][customer] = solver.IntVar(0, 1, '')  # if dist[facility][customer] < 50000 else 0
             # a facility can only serve if it is open
             solver.Add(serves[facility][customer] <= open[facility])
 
@@ -95,3 +59,35 @@ def mip(facilities, customers):
     print('%d branch-and-bound nodes' % solver.nodes())
 
     return solver.Objective().Value(), solution
+
+
+def mip_gb(facilities, customers, sub_problem_num):
+    cartesian_prod = list(product(customers, facilities))
+    setup_cost = {facility: facility.setup_cost for facility in facilities}
+    capacities = {facility: facility.capacity for facility in facilities}
+    demands = {customer: customer.demand for customer in customers}
+    shipping_cost = {(c, f): length(c.location, f.location) for c, f in cartesian_prod}
+
+    m = gp.Model('facility_location')
+
+    select = m.addVars(facilities, vtype=GRB.BINARY, name='select')
+    assign = m.addVars(cartesian_prod, vtype=GRB.BINARY, name='assign')
+
+    m.addConstrs((assign[(c, f)] <= select[f] for c, f in cartesian_prod), name='Ship only if you can')
+    m.addConstrs((gp.quicksum(assign[(c, f)] for f in facilities) == 1 for c in customers), name='Every customer is satisfied')
+    m.addConstrs((gp.quicksum(assign[(c, f)] * demands[c] for c in customers) <= capacities[f] for f in facilities), name='Facility capacity is not met')
+
+    m.setObjective(select.prod(setup_cost) + assign.prod(shipping_cost), GRB.MINIMIZE)
+    m.setParam('TimeLimit', 15 * 60)
+    # m.setParam('SolFiles', 'temp-solutions/sub_%d_fl_500_7' % sub_problem_num)
+
+    print(m.optimize())
+
+    solution = {}
+    for customer in customers:
+        for facility in facilities:
+            if assign[customer, facility].x > 1e-6:
+                solution[customer] = facility
+                break
+
+    return m.objVal, solution
