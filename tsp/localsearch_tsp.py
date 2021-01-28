@@ -1,7 +1,7 @@
 from collections import namedtuple
 from random import randint, random
 
-from util import dist, create_greedy_permutation, Point
+from tsp.util import dist, create_greedy_permutation, Point
 
 
 def reverse(configuration, i, j):

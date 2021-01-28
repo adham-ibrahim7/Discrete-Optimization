@@ -1,10 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from util import *
-from ortools.linear_solver import pywraplp
-
 from mip_gb import *
+
 
 def solve_it(input_data):
     # Modify this code to run your optimization algorithm
@@ -37,25 +35,16 @@ def solve_it(input_data):
         return open("solutions/%d_%d" % (customer_count, vehicle_count)).read()
     '''
 
-    gurobi_subproblems(vehicle_count, vehicle_capacity, depot, customers)
+    # gurobi_subproblems(vehicle_count, vehicle_capacity, depot, customers)
 
     subproblems = get_subproblems(vehicle_count, vehicle_capacity, depot, customers)
     # subproblems = read_subproblems("route-info/%d_%d" % (customer_count, vehicle_count), customers)
-
 
     with open("route-info/%d_%d" % (customer_count, vehicle_count), "w") as f:
         for subproblem in subproblems:
             f.write(" ".join(map(str, (customer.index for customer in subproblem))) + "\n")
 
-
     print(len(subproblems))
-
-    solution = ""
-
-    #sizes = [5, 4, 6]
-    #assert sum(sizes) == customer_count-1
-    #    for size in sizes:
-    #    subset = customers[i:i+size]
 
     obj = 0
     solution = ""

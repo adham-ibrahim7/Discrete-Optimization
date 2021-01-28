@@ -23,96 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
-      <change afterPath="$PROJECT_DIR$/vehicle routing/_coursera" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_101_10_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_16_3_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_200_16_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_26_8_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_421_41_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data-6/vrp_51_5_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_10_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_11_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_11_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_11_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_11_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_14_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_14_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_101_8_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_121_7_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_135_7_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_12_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_12_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_14_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_14_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_14_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_151_15_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_16_3_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_16_5_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_200_16_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_200_16_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_200_17_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_200_17_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_21_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_21_6_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_22_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_22_6_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_23_3_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_23_5_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_241_22_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_253_27_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_256_14_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_262_25_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_26_8_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_301_28_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_30_3_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_30_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_31_9_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_321_30_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_324_16_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_33_3_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_33_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_33_5_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_361_33_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_36_11_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_386_47_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_397_34_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_400_18_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_41_14_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_421_41_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_45_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_481_38_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_484_19_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_48_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_51_5_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_5_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_72_4_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_10_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_10_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_14_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_14_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_15_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_7_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_7_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_8_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_8_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_9_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_9_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/data/vrp_76_9_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/handout.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/localsearch_tsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/mip_gb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/ortvrp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/route-info/101_10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/route-info/16_3_copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/route-info/421_41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/route-info/51_5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/submit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/temp_sol.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/tsp_solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/tsp_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle routing/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/localsearch_tsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/localsearch_tsp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsp/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/localsearch_tsp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/mip_gb.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/mip_gb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/temp_sol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/temp_sol.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/tsp_solver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/tsp_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +49,11 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -243,13 +168,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tsp_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Discrete Optimization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vehicle routing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vehicle routing/tsp_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.solver" />
       <item itemvalue="Python.submit" />
+      <item itemvalue="Python.tsp_test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.solver" />
+        <item itemvalue="Python.tsp_test" />
         <item itemvalue="Python.submit" />
       </list>
     </recent_temporary>
@@ -363,6 +312,10 @@
       <workItem from="1610498701852" duration="13207000" />
       <workItem from="1610513755992" duration="330000" />
       <workItem from="1610541963172" duration="3518000" />
+      <workItem from="1610556608513" duration="176000" />
+      <workItem from="1610583845053" duration="1810000" />
+      <workItem from="1611786486036" duration="978000" />
+      <workItem from="1611797079313" duration="719000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -539,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609697816222</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add vrp; basic solution 30/60">
+      <created>1610556625812</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610556625812</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +546,8 @@
     <MESSAGE value="solve knapsack with mip 60/60" />
     <MESSAGE value="facility location solved with or tools 71/80" />
     <MESSAGE value="add gurobi facility solver 77/80" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gurobi facility solver 77/80" />
+    <MESSAGE value="add vrp; basic solution 30/60" />
+    <option name="LAST_COMMIT_MESSAGE" value="add vrp; basic solution 30/60" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -611,9 +572,10 @@
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1609377826082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1610507770170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$tsp_test.coverage" NAME="tsp_test Coverage Results" MODIFIED="1611797180201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1610545509721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1611797749365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$color_map_experimentation.coverage" NAME="color_map_experimentation Coverage Results" MODIFIED="1606515072592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$temp.coverage" NAME="temp Coverage Results" MODIFIED="1605493584041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />

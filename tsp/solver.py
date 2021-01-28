@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 import os
 
-from localsearch_tsp import *
-from util import *
+from tsp.localsearch_tsp import *
+from tsp.util import *
 
 
-def solve_it(input_data, input_file=""):
+def solve_it(input_data, input_file="", iters=1000):
     # Modify this code to run your optimization algorithm
 
     # parse the input
@@ -27,7 +27,7 @@ def solve_it(input_data, input_file=""):
         best_cost, _ = map(float, f.readline().split())
         best_tour = f.readline().split()
     else:
-        best_tour, best_cost = local_search(node_count, coordinates, create_greedy_permutation, two_opt_on_list, 1000)
+        best_tour, best_cost = local_search(node_count, coordinates, create_greedy_permutation, two_opt_on_list, iters)
 
     '''
     best_adj, best_cost = create_greedy_adj(node_count, coordinates)

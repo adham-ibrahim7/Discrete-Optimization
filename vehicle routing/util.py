@@ -1,11 +1,7 @@
-import math
-from collections import namedtuple
-from itertools import product
-
 from ortools.linear_solver import pywraplp
 
-from tsp_solver import *
-from tsp_util import *
+from tsp.solver import *
+from tsp.util import *
 
 Customer = namedtuple("Customer", ['index', 'demand', 'x', 'y'])
 
@@ -22,7 +18,7 @@ def solve_tsp(depot, customers):
     for point in all_points:
         input_data += "%d %d\n" % (point.x, point.y)
 
-    lines = solve_it(input_data, 1000).split("\n")
+    lines = solve_it(input_data, iters=1000).split("\n")
     obj = float(lines[0].split()[0])
     tour_raw = map(int, lines[1].split())
 
