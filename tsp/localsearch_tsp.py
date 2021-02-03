@@ -120,6 +120,10 @@ def local_search(node_count, coordinates, greedy_function, search_function, iter
     The tour representation returned by the greedy function is the same representation expected by the search.
     """
 
+    from time import time
+
+    start = time()
+
     best_configuration, best_cost = greedy_function(node_count, coordinates)
 
     for _ in range(iterations):
@@ -128,16 +132,19 @@ def local_search(node_count, coordinates, greedy_function, search_function, iter
         while True:
             prev_cost = cost
             tour, cost = search_function(node_count, coordinates, tour, cost)
-            if prev_cost >= cost:
+            if prev_cost-cost <= 0.1:
                 break
 
         if cost < best_cost:
             best_cost = cost
             best_configuration = tour
 
-            print(best_cost)
+            # print(best_cost)
             with open("temp_sol.txt", "w") as f:
                 f.write(str(best_cost) + " 0\n")
                 f.write(' '.join(map(str, best_configuration)))
+
+        if time() - start > 10:
+            break
 
     return best_configuration, best_cost

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from mip_gb import *
-
+from local_search_vrp import solve_subproblems, local_search
 
 def solve_it(input_data):
     # Modify this code to run your optimization algorithm
@@ -25,47 +25,39 @@ def solve_it(input_data):
     depot = customers.pop(0)
 
     '''
-    if customer_count > 400:
-        solution = trivial(vehicle_count, customer_count, vehicle_capacity, depot, [depot] + customers)
-        return solution
+    with open("final-solutions/%d_%d" % (customer_count, vehicle_count), "r") as f:
+        return f.read()
     '''
 
-    '''
-    if os.path.exists("solutions/%d_%d" % (customer_count, vehicle_count)):
-        return open("solutions/%d_%d" % (customer_count, vehicle_count)).read()
-    '''
+    bestobj = 1000000
+    bestsol = ""
 
-    # gurobi_subproblems(vehicle_count, vehicle_capacity, depot, customers)
-
-    subproblems = get_subproblems(vehicle_count, vehicle_capacity, depot, customers)
     # subproblems = read_subproblems("route-info/%d_%d" % (customer_count, vehicle_count), customers)
+    for i in range(0, 10000):
+        subproblems = get_init_subs_ort(vehicle_count, vehicle_capacity, depot, customers)
 
+        obj, solution = solve_subproblems(depot, subproblems, tsp_iters=20)
+
+        if obj < bestobj:
+            bestobj = obj
+            bestsol = solution
+            with open("solutions/%d_%d" % (customer_count, vehicle_count), "w") as f:
+                f.write(("%.4f 0\n" % bestobj) + bestsol)
+
+        print("Iteration:", i, ", bestobj:", bestobj)
+
+    '''
     with open("route-info/%d_%d" % (customer_count, vehicle_count), "w") as f:
         for subproblem in subproblems:
             f.write(" ".join(map(str, (customer.index for customer in subproblem))) + "\n")
+    '''
 
-    print(len(subproblems))
-
-    obj = 0
-    solution = ""
-
-    i = 1
-    for subproblem in subproblems:
-        print("solving sub %d/%d" % (i, len(subproblems)))
-        i += 1
-
-        subobj, tour = solve_tsp(depot, subproblem)
-
-        zero = tour.index("0")
-        tour = tour[zero:] + tour[:zero] + ["0"]
-
-        obj += subobj
-        solution += " ".join(tour) + "\n"
-
-    solution = ("%.4f 0\n" % obj) + solution
+    bestsol = ("%.4f 0\n" % bestobj) + bestsol
 
     with open("solutions/%d_%d" % (customer_count, vehicle_count), "w") as f:
-        f.write(solution)
+        f.write(bestsol)
+
+    print(bestsol)
 
     return solution
 

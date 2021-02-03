@@ -23,15 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba55b605-2103-4710-99b4-7d7701e8fab6" name="Default Changelist" comment="add rest of coloring solution files">
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/101_10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/16_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/200_16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/26_8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/421_41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/final-solutions/51_5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle routing/test_tsp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsp/localsearch_tsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/localsearch_tsp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsp/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tsp/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle routing/localsearch_tsp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle routing/mip_gb.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/mip_gb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle routing/local_search_vrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/local_search_vrp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle routing/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/solver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle routing/temp_sol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/temp_sol.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle routing/tsp_solver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle routing/tsp_util.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle routing/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle routing/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +49,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="refactor_vrp" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -88,7 +94,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle routing/route-info" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle routing/final-solutions" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -102,6 +108,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\vehicle routing\final-solutions" />
       <recent name="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\vehicle routing\route-info" />
       <recent name="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\vehicle routing\solutions" />
       <recent name="C:\Users\Adham Ibrahim\Documents\courses\Discrete Optimization\vehicle routing" />
@@ -138,7 +145,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vehicle routing/solver.py" />
-      <option name="PARAMETERS" value="./data/vrp_16_3_1" />
+      <option name="PARAMETERS" value="./data/vrp_51_5_1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -160,6 +167,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vehicle routing/submit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_tsp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Discrete Optimization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vehicle routing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vehicle routing/test_tsp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,12 +223,14 @@
       <item itemvalue="Python.solver" />
       <item itemvalue="Python.submit" />
       <item itemvalue="Python.tsp_test" />
+      <item itemvalue="Python.test_tsp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.solver" />
-        <item itemvalue="Python.tsp_test" />
         <item itemvalue="Python.submit" />
+        <item itemvalue="Python.test_tsp" />
+        <item itemvalue="Python.tsp_test" />
       </list>
     </recent_temporary>
   </component>
@@ -316,6 +347,10 @@
       <workItem from="1610583845053" duration="1810000" />
       <workItem from="1611786486036" duration="978000" />
       <workItem from="1611797079313" duration="719000" />
+      <workItem from="1612042375956" duration="651000" />
+      <workItem from="1612206420944" duration="2348000" />
+      <workItem from="1612217830266" duration="2042000" />
+      <workItem from="1612311593590" duration="9740000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: create branch and bound abstraction, add depth first solution">
       <created>1604364206448</created>
@@ -571,11 +606,12 @@
     <SUITE FILE_PATH="coverage/Discrete_Optimization$test_ortools.coverage" NAME="test_ortools Coverage Results" MODIFIED="1609384564905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facility location" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku_solver.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605496710443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$generate_random.coverage" NAME="generate_random Coverage Results" MODIFIED="1609377826082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1610507770170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$tsp_test.coverage" NAME="tsp_test Coverage Results" MODIFIED="1611797180201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$submit.coverage" NAME="submit Coverage Results" MODIFIED="1612324115144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudoku.coverage" NAME="sudoku_solver Coverage Results" MODIFIED="1605495783376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$sudokuForrestKnight.coverage" NAME="sudokuForrestKnight Coverage Results" MODIFIED="1605484404187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
-    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1611797749365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$test_tsp.coverage" NAME="test_tsp Coverage Results" MODIFIED="1612312803335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
+    <SUITE FILE_PATH="coverage/Discrete_Optimization$solver.coverage" NAME="solver Coverage Results" MODIFIED="1612323954923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vehicle routing" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$color_map_experimentation.coverage" NAME="color_map_experimentation Coverage Results" MODIFIED="1606515072592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph coloring" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$temp.coverage" NAME="temp Coverage Results" MODIFIED="1605493584041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />
     <SUITE FILE_PATH="coverage/Discrete_Optimization$solver2.coverage" NAME="solver2 Coverage Results" MODIFIED="1605220572171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sudoku" />

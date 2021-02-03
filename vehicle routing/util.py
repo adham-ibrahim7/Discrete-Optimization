@@ -10,25 +10,6 @@ def length(customer1, customer2):
     return math.sqrt((customer1.x - customer2.x) ** 2 + (customer1.y - customer2.y) ** 2)
 
 
-def solve_tsp(depot, customers):
-    all_points = [depot] + customers
-
-    input_data = "%d \n" % len(all_points)
-
-    for point in all_points:
-        input_data += "%d %d\n" % (point.x, point.y)
-
-    lines = solve_it(input_data, iters=1000).split("\n")
-    obj = float(lines[0].split()[0])
-    tour_raw = map(int, lines[1].split())
-
-    tour = []
-    for i in tour_raw:
-        tour.append(str(all_points[i].index))
-
-    return obj, tour
-
-
 def trivial(vehicle_count, customer_count, vehicle_capacity,
             depot, customers):
     # build a trivial solution
@@ -75,7 +56,7 @@ def trivial(vehicle_count, customer_count, vehicle_capacity,
     return outputData
 
 
-def get_subproblems(vehicle_count, vehicle_capacity, depot, customers):
+def get_init_subs_ort(vehicle_count, vehicle_capacity, depot, customers):
     shuffle(customers)
 
     in_route = {}
